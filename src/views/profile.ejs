@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+</head>
+<body>
+    <h1>User Profiles</h1>
+
+    <% // Check if there is data passed and it's an array %>
+    <% if (data && Array.isArray(data)) { %>
+        <% data.forEach(function(user) { %>
+            <div class="card">
+                <h3><%= user.username %></h3>
+                <p>Gender: <%= user.gender %></p>
+                <p>Email: <%= user.email %></p>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <p>No user data available.</p>
+    <% } %>
+
+</body>
+</html>

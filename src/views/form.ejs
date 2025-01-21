@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <form id="user-form" action="/create-user" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+    
+        <button type="submit">Create User</button>
+      </form> -->
+
+
+
+
+
+
+      <div class="form-container" >
+        <h1>User Information Form</h1>
+        <form action="/create-user" method="POST">
+          <!-- Username -->
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+    
+          <!-- Gender -->
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="inline">
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+            </div>
+            <div class="inline">
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+            </div>
+            <div class="inline">
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+            </div>
+          </div>
+    
+          <!-- Image URL -->
+          <div class="form-group">
+            <label for="imageURL">Profile Image URL</label>
+            <input type="url" id="imageURL" name="imageURL" placeholder="Enter image URL (e.g., http://example.com/image.jpg)" required>
+          </div>
+    
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"  required>
+          </div>
+    
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+    
+          <!-- Job Role -->
+          <div class="form-group">
+            <label for="jobRole">Job Role</label>
+            <select id="jobRole" name="jobRole" required>
+              <option value="developer">Developer</option>
+              <option value="designer">Designer</option>
+              <option value="manager">Manager</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+    
+          <!-- Bio -->
+          <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" placeholder="Write a short bio..." required></textarea>
+          </div>
+    
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+    
+      
+      </div>
+</body>
+</html>
